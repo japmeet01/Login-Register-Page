@@ -28,7 +28,6 @@
             <li><a href="login.php">Login</a></li>
           </ul>
         </nav>
-        <h1 style="color: aliceblue;">About Us</h1>
       </div>
     <div class="about">
     <h1 class="h1">About-Us</h1>
