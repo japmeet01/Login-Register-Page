@@ -1,213 +1,277 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.register_success{
-	color:greenyellow;
-	text-align:center;
-	font-size:35px;
-	margin:30px
+.register_success {
+  color: greenyellow;
+  text-align: center;
+  font-size: 35px;
+  margin: 30px;
 }
-.password_mismatch{
-	color:red;
-	text-align:center;
-	font-size:35px;
-	margin:30px
-}
-
-html{
-	font-size: 10px;
-	font-family: "Roboto Cn", sans-serif;
+.password_mismatch {
+  color: red;
+  text-align: center;
+  font-size: 35px;
+  margin: 30px;
 }
 
-a{
-	text-decoration: none;
-	color: #eee;
+html {
+  font-size: 10px;
+  font-family: "Roboto Cn", sans-serif;
 }
 
-header{
-	width: 100%;
-	height: 100vh;
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(22, 15, 1, 0.795)), url("https://t3.ftcdn.net/jpg/03/50/64/40/360_F_350644095_ZtIo5lqaaBSeIXBxQVvgy9L1lQqcwCUM.jpg") center no-repeat;
-	background-size: cover;
-	position: relative; 
+header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(22, 15, 1, 0.795)
+    ),
+    url("https://t3.ftcdn.net/jpg/03/50/64/40/360_F_350644095_ZtIo5lqaaBSeIXBxQVvgy9L1lQqcwCUM.jpg")
+      center no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-.container{
-	max-width: 120rem;
-	width: 90%;
-	margin: 0 auto;
+.container {
+  max-width: 120rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
-nav{
-	padding-top: 5rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	text-transform: uppercase;
-	font-size: 1.6rem;
+nav {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.6rem;
 }
 
-.brand{
-	font-size: 5rem;
-	font-weight: 300;
-
+.brand {
+  font-size: 5rem;
+  font-weight: 300;
 }
-.brand:hover{
-    transform: scale(1.5);
-    transition: all 1s;
-}
-
-.brand span{
-	color: crimson;
+.brand:hover {
+  transform: scale(1.3);
+  transition: all 0.5s;
 }
 
-nav ul{
-	display: flex;
+.brand span {
+  color: crimson;
+  text-decoration: none;
+}
+.brand a {
+  text-decoration: none;
+  color: white;
 }
 
-nav ul li{
-	list-style: none;
+nav ul {
+  display: flex;
 }
 
-
-nav ul li a{
-	padding: 1rem 0;
-	margin: 0 3rem;
-	position: relative;
-	letter-spacing: 2px;
-    text-shadow: 1px 1px 5px white;
-	font-size: 2rem;
+nav ul li {
+  list-style: none;
 }
 
-nav ul li a:last-child{
-	margin-right: 0;
+nav ul li a {
+  padding: 1rem 0;
+  margin: 0 3rem;
+  position: relative;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  color: crimson;
+}
+
+nav ul li a:last-child {
+  margin-right: 0;
 }
 
 nav ul li a::before,
-nav ul li a::after{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 2px;
-	background-color: crimson;
-	left: 0;
-	transform: scaleX(0);
-	transition: all 0.5s;
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  transform: scaleX(0);
+  transition: all 0.5s;
 }
 
-nav ul li a::before{
-	top: 0;
-	transform-origin: left;
+nav ul li a::before {
+  top: 0;
+  transform-origin: left;
 }
 
-nav ul li a::after{
-	bottom: 0;
-	transform-origin: right;
+nav ul li a::after {
+  bottom: 0;
+  transform-origin: right;
 }
-
 
 nav ul li a:hover::before,
-nav ul li a:hover::after{
-	transform: scaleX(1);
+nav ul li a:hover::after {
+  transform: scaleX(1);
 }
 
 /* login form */
 
-.center{
-    position: absolute;
-    left:38%;
-	top:30%;
-    width:400px;
-    background: white;
-    border-radius: 20px;
-     box-shadow: -1px -1px 15px white    
+.center {
+  position: absolute;
+  left: 38%;
+  top: 30%;
+  width: 400px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: -1px -1px 15px white;
 }
-.center h1{
-    color:crimson;
-    text-align: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    font-size:4rem;
-    border-bottom: 1px solid silver;
+.center h1 {
+  color: crimson;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 4rem;
+  border-bottom: 1px solid silver;
 }
-.center form{
-    padding-left:30px ;
-    padding-right:30px ;
-    padding-bottom:30px ;
-    box-sizing: border-box;
+.center form {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
 }
-form .txt_field{
-    position: relative;
-    border-bottom: 2px solid rgba(245, 114, 140, 0.63);
-    margin:30px 0;
+form .txt_field {
+  position: relative;
+  border-bottom: 2px solid rgba(245, 114, 140, 0.63);
+  margin: 30px 0;
 }
-.txt_field input{
-    width:100%;
-    padding:0 5px;
-    height:40px;
-    font-size:16px;
-    border: none;
-    background:none;
-    outline:none;
+.txt_field input {
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
 }
-input[type="submit"]{
-    width:100%;
-    height:40px;
-    border-radius: 10px;
-    border:none;
-    background:#fc717c;
-    cursor:pointer;
-    font-size: 18px;
-    color:white;
+input[type="submit"] {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  background: #fc717c;
+  cursor: pointer;
+  font-size: 18px;
+  color: white;
 }
 
 /* about form */
 
-.about{
-    margin-left: 50px;
+.about {
+  text-align: center;
 }
-.img{
-    border-radius: 30%;
-    width:  200px;
-    height: 200px;
-    padding: 5px;     
-    opacity: 100;
-	margin-top: 20px;
-  }
-   #grid{
-      display: flex;
-    }    
-    .column{
-    flex: 30px;}
-  .h2{
-      margin-top: 30px;
-      text-decoration-line: underline ;
-      color: rgb(228, 61, 61);
-      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      font-size: 30px;
-  }
- .h1{
-      text-align: center;
-      color: crimson;
-      text-decoration-line: underline ;
-      text-decoration-style: double;
-      font-family: 'Times New Roman', Times, serif;
-      font-size: 50px;
-  }
-  .li{
-      color: #fc717c;
-      font-size: large;
-      font-family: sans-serif;
-      font-size: 25px;
-  }
-  .strong{
-      color: white;
-      margin-left: 12px;
-      font-size: 25px;
-      font-family: monospace;
-    }
-	.work{
-		margin-top: 20px;
-	}
+
+#grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+}
+.column1 {
+  background-image: linear-gradient(
+    to top,
+    rgba(59, 4, 25, 0.849),
+    rgb(255, 0, 234)
+  );
+  width: 450px;
+  height: 500px;
+  border-radius: 30px;
+  padding:30px;
+}
+.column2 {
+  background-image: linear-gradient(
+    to top,
+    rgba(59, 4, 4, 0.589),
+    rgba(255, 0, 0, 1)
+  );
+  width: 450px;
+  height: 500px;
+  border-radius: 30px;
+  padding:30px;
+}
+.column3 {
+  background-image: linear-gradient(
+    to top,
+    rgba(59, 29, 4, 0.685),
+    rgb(240, 120, 8)
+  );
+  width: 450px;
+  height: 500px;
+  border-radius: 30px;
+  padding:30px;
+}
+.column3:hover {
+  background-image: linear-gradient(
+    to top,
+    rgba(59, 4, 4, 0.589),
+    rgb(107, 60, 6)
+  );
+}
+.column2:hover {
+  background-image: linear-gradient(
+    to top,
+    rgba(59, 4, 4, 0.589),
+    rgb(112, 11, 11)
+  );
+}
+.column1:hover {
+  background-image: linear-gradient(
+    to top,
+    rgba(59, 4, 4, 0.589),
+    rgb(65, 11, 47)
+  );
+}
+
+.about_heading {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+  text-shadow: 3px 3px 5px rgb(252, 115, 142);
+}
+.about_heading:hover {
+  color: crimson;
+}
+.h2 {
+  margin-top: 30px;
+  text-decoration-line: underline;
+  color: rgb(228, 61, 61);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 30px;
+}
+.japmeet{
+  width:150px;
+  border: 4px solid white;
+  border-radius: 100%;
+  margin-bottom:15px;
+}
+
+.about p{
+  color:white;
+  text-align: start;
+  font-size:21px;
+  margin-bottom:15px;
+}
+
+.subheading{
+  color:rgb(238, 255, 0);
+  font-size:30px;
+  text-align:start;
+  margin-bottom: 10px;
+}
