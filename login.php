@@ -17,7 +17,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
       session_start();
       $_SESSION['loggedin']=true;
       $_SESSION['username']=$username;
-      header("location:quiz.php");
+      header("location:quizhome.php");
     }
     else{
     $showError=true;
@@ -45,9 +45,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
       <div class="container">
         <nav>
           <h1 class="brand">
-            <a 
-              >qui<span style="font-size: 40px"><b>zz</b></span
-              >er</a
+          <a href="#"
+              >Quiz<span style="font-size: 50px"><b>JEE</b></span
+              ></a
             >
           </h1>
           <ul>

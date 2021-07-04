@@ -119,108 +119,101 @@
     transform: scaleX(1);
   }
   
-  
-  /* about form */
+  /* homepage style */
 
-.about {
+
+.homepage_heading {
     text-align: center;
-  }
-  
-  #grid {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 40px;
-  }
-  .column1 {
-    background-image: linear-gradient(
-      to top,
-      rgba(59, 4, 25, 0.849),
-      rgb(255, 0, 234)
-    );
-    width: 450px;
-    height: 500px;
-    border-radius: 30px;
-    padding:30px;
-  }
-  .column2 {
-    background-image: linear-gradient(
-      to top,
-      rgba(59, 4, 4, 0.589),
-      rgba(255, 0, 0, 1)
-    );
-    width: 450px;
-    height: 500px;
-    border-radius: 30px;
-    padding:30px;
-  }
-  .column3 {
-    background-image: linear-gradient(
-      to top,
-      rgba(59, 29, 4, 0.685),
-      rgb(240, 120, 8)
-    );
-    width: 450px;
-    height: 500px;
-    border-radius: 30px;
-    padding:30px;
-  }
-  .column3:hover {
-    background-image: linear-gradient(
-      to top,
-      rgba(59, 4, 4, 0.589),
-      rgb(107, 60, 6)
-    );
-  }
-  .column2:hover {
-    background-image: linear-gradient(
-      to top,
-      rgba(59, 4, 4, 0.589),
-      rgb(112, 11, 11)
-    );
-  }
-  .column1:hover {
-    background-image: linear-gradient(
-      to top,
-      rgba(59, 4, 4, 0.589),
-      rgb(65, 11, 47)
-    );
-  }
-  
-  .about_heading {
     color: white;
     font-family: "Times New Roman", Times, serif;
     font-size: 50px;
     text-shadow: 3px 3px 5px rgb(252, 115, 142);
+    margin-top: 40px;
   }
-  
-  .h2 {
-    margin-top: 30px;
-    text-decoration-line: underline;
-    color: rgb(228, 61, 61);
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
+  .subheading {
+    text-align: center;
+    color: rgb(245, 211, 18);
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 20px;
+    margin-bottom: 35px;
     font-size: 30px;
   }
-  .japmeet{
-    width:150px;
-    border: 4px solid white;
-    border-radius: 100%;
-    margin-bottom:15px;
+
+  #grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 20px;
+  }
+
+  .column1 {
+    background: linear-gradient(
+        to bottom,
+        rgba(167, 110, 3, 0.897),
+      rgb(68, 10, 42)
+      ),
+      url("https://lh5.googleusercontent.com/proxy/WrnfY8H4zt_A-7AjR5DmgeIFc_N3sxIuvjm5nEAiTc1HkKOI7NxXcrXxs2Z9U5zVsiFyBWJU9Zs8EXSM25vZWZrDoLP5by6e_lYygG7yj0Tp-3I5qYeDfes5vBIMFlAD=w1200-h630-p-k-no-nu")center no-repeat;
+    
+    width: 450px;
+    height: 400px;
+    border-radius: 30px;
+    padding:30px;
+  }
+  .column2 {
+    background: linear-gradient(
+        to bottom,
+        rgba(1, 211, 106, 0.87),
+      rgba(6, 68, 6, 0.801)
+      ),
+      url("https://t4.ftcdn.net/jpg/01/08/04/03/240_F_108040383_gS39RHsUrgQOVa2BFW8010GsKI6gUeS1.jpg");
+    width: 450px;
+    height: 400px;
+    border-radius: 30px;
+    padding:30px;
+  }
+  .column3 {
+    background: linear-gradient(
+        to bottom,
+        rgba(51, 139, 151, 0.966),
+      rgba(1, 21, 37, 0.973)
+      ),
+      url("https://www.teahub.io/photos/full/50-503419_cute-chemistry-wallpaper-typography-cute-chemistry-background.jpg")center no-repeat;
+    width: 450px;
+    height: 400px;
+    border-radius: 30px;
+    padding:30px;
   }
   
-  .about p{
-    color:white;
-    text-align: start;
-    font-size:21px;
-    margin-bottom:15px;
+
+  .quiz-heading{
+      color: white;
+      font-size:35px;
+      text-align: center;
+      padding-top: 20px;
   }
-  
-  .subheading{
-    color:rgb(238, 255, 0);
-    font-size:30px;
-    text-align:start;
-    margin-bottom: 10px;
+  .listitem{
+      padding:30px;
   }
-  
+
+  li{
+      color:white;
+      font-size:25px;
+      margin-top: 10px;
+  }
+
+  input[type="submit"] {
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background: #ce0303;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    margin-left:60px;
+    margin-top: 40px;
+  }
+  input[type="submit"]:hover{
+    background: #850b04;
+  }

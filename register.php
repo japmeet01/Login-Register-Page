@@ -51,9 +51,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
       <div class="container">
         <nav>
           <h1 class="brand">
-            <a href="register.php"
-              >qui<span style="font-size: 40px"><b>zz</b></span
-              >er</a
+          <a href="#"
+              >Quiz<span style="font-size: 50px"><b>JEE</b></span
+              ></a
             >
           </h1>
           <ul>

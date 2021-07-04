@@ -6,6 +6,7 @@ if(!isset($_SESSION['loggedin'])||$_SESSION['loggedin']!=true){
 }
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,9 +22,9 @@ if(!isset($_SESSION['loggedin'])||$_SESSION['loggedin']!=true){
       <div class="container">
         <nav>
           <h1 class="brand">
-            <a href="#"
-              >qui<span style="font-size: 40px"><b>zz</b></span
-              >er</a
+          <a href="#"
+              >Quiz<span style="font-size: 50px"><b>JEE</b></span
+              ></a
             >
           </h1>
           <ul>
