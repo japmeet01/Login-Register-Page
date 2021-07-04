@@ -27,7 +27,7 @@ if(!isset($_SESSION['loggedin'])||$_SESSION['loggedin']!=true){
             >
           </h1>
           <ul>
-          <li><a href="quiz.php">Home</a></li>
+          <li><a href="quizhome.php">Home</a></li>
             <li><a>Welcome <?php 
             echo $_SESSION['username'];
             ?></a> </li>

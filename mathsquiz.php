@@ -13,7 +13,7 @@ if(!isset($_SESSION['loggedin'])||$_SESSION['loggedin']!=true){
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QuiZZer</title>
+    <title>Maths Quiz</title>
     <link rel="stylesheet" href="./styles/quizstyles.css" />
   </head>
 
@@ -28,7 +28,7 @@ if(!isset($_SESSION['loggedin'])||$_SESSION['loggedin']!=true){
             >
           </h1>
           <ul>
-          <li><a href="quiz.php">Home</a></li>
+          <li><a href="quizhome.php">Home</a></li>
             <li><a>Welcome <?php 
             echo $_SESSION['username'];
             ?></a> </li>
@@ -36,6 +36,7 @@ if(!isset($_SESSION['loggedin'])||$_SESSION['loggedin']!=true){
           </ul>
         </nav>
         </div>
+        <h1 class="homepage_heading">Maths Quiz</h1>
 
         <div class="main-div">
           <div class="inner-div">
@@ -65,7 +66,7 @@ if(!isset($_SESSION['loggedin'])||$_SESSION['loggedin']!=true){
 
       </div>
     </header>
-    <script src="./script/script.js"></script>
+    <script src="./script/mathsscript.js"></script>
   </body>
   
 </html>
