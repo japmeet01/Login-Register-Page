@@ -14,7 +14,7 @@ if(!isset($_SESSION['loggedin'])||$_SESSION['loggedin']!=true){
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chemistry Quiz</title>
-    <link rel="stylesheet" href="./styles/quizstyles.css" />
+    <link rel="stylesheet" href="quizstyles.css" />
   </head>
 
   <body>
@@ -36,10 +36,13 @@ if(!isset($_SESSION['loggedin'])||$_SESSION['loggedin']!=true){
           </ul>
         </nav>
         </div>
-        <h1 class="homepage_heading">Chemistry Quiz</h1>
 
         <div class="main-div">
           <div class="inner-div">
+          <div style="" class="timer">
+            <h1 id="timer_head">Timer:</h1>
+          <h1 id="timer">120</h1>
+            </div>
           <h2 class = "question">Question 1</h2>
           <ul>
               <li>
@@ -66,7 +69,7 @@ if(!isset($_SESSION['loggedin'])||$_SESSION['loggedin']!=true){
 
       </div>
     </header>
-    <script src="./script/chemistryscript.js"></script>
+    <script src="chemistryscript.js"></script>
   </body>
   
 </html>

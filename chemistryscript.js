@@ -1,47 +1,68 @@
+const timerr = document.getElementById('timer');
+var c=120;
+ setInterval(timer001,1000);
+
+function timer001(){
+if(c>0){
+  timerr.innerText=c;
+c--;
+}
+if(c===0){
+  timerr.innerText=c;
+  showScore.innerHTML = `
+      <h3> You Scored ${score}/${quizDB.length}  </h3>  
+       <button class="btn" onclick="location.reload()">Play Again</button>
+    `;
+    showScore.classList.remove('scoreArea');
+}
+
+
+}
 const quizDB = [
     {
-        question: "Q1: Which number is equivalent to 3^(4)÷3^(2)",
-        a: "1",
-        b: "4",
-        c: "9",
-        d: "5",
+        question: "Q1:Which of the following is not a correct statement about Bitumen?",
+        a: "It’s a mixture of highly condensed polycyclic aromatic compounds",
+        b: "Its is soluble in Carbon Disulphide",
+        c: " SARA analysis is used to determine bitumen chemistry",
+        d: "All of above are correct statements",
+        ans: "ans4"
+    },
+    {
+        question: "Q2: Dalton’s name is associated with which of the following terms?",
+        a: "Electron",
+        b: "Proton",
+        c: "Atom",
+        d: "Neutron",
         ans: "ans3"
     },
     {
-        question: "Q2: There are 49 dogs signed up for a dog show. There are 36 more small dogs than large dogs. How many small dogs have signed up to compete? ",
-        a: "40",
-        b: "41.5",
-        c: "38",
-        d: "42.5",
+        question: "Q3:Which gas is used in making of Vanaspati ghee from vegetable oils?",
+        a: "N2",
+        b: "NO2",
+        c: " H2",
+        d: "Ne",
+        ans: "ans3"
+    },
+    {
+        question: "Q4: White Phosphorous is represented by which among the following symbols?",
+        a: " P1",
+        b: " P2",
+        c: " P3",
+        d: " P4",
         ans: "ans4"
-    },
-    {
-        question: "Q3: Add 8.563 and 4.8292.",
-        a: "13.3922",
-        b: "13.3911",
-        c: "13.3920",
-        d: "12.3922",
-        ans: "ans1"
-    },
-    {
-        question: "Q4: Sally is 54 years old and her mother is 80, how many years ago was Sally’s mother times her age?",
-        a: "41 years ago",
-        b: "40 years ago",
-        c: "42 years ago",
-        d: "44 years ago",
-        ans: "ans1"
         
     },
     {
-        question: "Q5: There is a three-digit number. The second digit is four times as big as the third digit?",
-        a: "132",
-        b: "149",
-        c: "142",
-        d: "141",
-        ans: "ans4"
+        question: "Q5:Which among the following is known as White Vitriol?",
+        a: " Zinc Sulphate",
+        b: "Zinc Chloride",
+        c: " Zinc Phosphate",
+        d: "Zinc oxide",
+        ans: "ans1"
         
     },
 ];
+
 const question = document.querySelector('.question');
 const option1 = document.querySelector('#option1');
 const option2 = document.querySelector('#option2');
@@ -51,6 +72,7 @@ const submit = document.querySelector('#submit');
 
 const answers = document.querySelectorAll('.answer');
 const showScore = document.querySelector('#showScore');
+
 
 let questionCount = 0;
 let score =0;
@@ -94,11 +116,11 @@ submit.addEventListener('click', () =>
 
  deselectAll();
 
-if(questionCount < quizDB.length){
+if(questionCount < quizDB.length&&c>0){
     loadQuestion(); 
 }
-else{
-
+else {
+  c=0;
     showScore.innerHTML = `
       <h3> You Scored ${score}/${quizDB.length}  </h3>  
        <button class="btn" onclick="location.reload()">Play Again</button>

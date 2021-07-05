@@ -210,6 +210,18 @@
     border-radius: 100%;
     margin-bottom:15px;
   }
+  .nitin{
+    width:120px;
+    border: 4px solid white;
+    border-radius: 100%;
+    margin-bottom:15px;
+  }
+  .meghana{
+    width:100px;
+    border: 4px solid white;
+    border-radius: 10%;
+    margin-bottom:15px;
+  }
   
   .about p{
     color:white;

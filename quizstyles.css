@@ -130,6 +130,7 @@
 	min-height: 75vh;
 	display: grid;
 	place-items: center; 
+ 
 
 }
 .inner-div
@@ -201,14 +202,12 @@
 
 }
 
-.homepage_heading {
-  text-align: center;
-  color: white;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 50px;
-  text-shadow: 3px 3px 5px rgb(252, 115, 142);
-  margin-top: 30px;
-  position: relative;
-  top:15px;
+.timer{
+  color:red;
+  display:flex;
+  margin-left: 550px;
 }
+
+
+
 

@@ -48,7 +48,7 @@ if(!isset($_SESSION['loggedin'])||$_SESSION['loggedin']!=true){
                 Total Questions: 5
               </li>
               <li>
-                Total Time: 5 mins
+                Total Time: 2 mins
               </li>
               <li>
                 Difficulty: Hard
@@ -66,7 +66,7 @@ if(!isset($_SESSION['loggedin'])||$_SESSION['loggedin']!=true){
                 Total Questions: 5
               </li>
               <li>
-                Total Time: 5 mins
+                Total Time: 2 mins
               </li>
               <li>
                 Difficulty: Hard
@@ -80,10 +80,10 @@ if(!isset($_SESSION['loggedin'])||$_SESSION['loggedin']!=true){
           <div class="listitem">
             <ul>
               <li>
-                Total Questions:5
+                Total Questions: 5
               </li>
               <li>
-                Total Time: 5 mins
+                Total Time: 2 mins
               </li>
               <li>
                 Difficulty: Hard

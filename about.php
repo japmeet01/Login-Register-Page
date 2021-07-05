@@ -11,7 +11,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles/aboutstyles.css" />
+    <link rel="stylesheet" href="aboutstyles.css" />
   </head>
   <body>
     <header>
@@ -39,17 +39,17 @@
       <p>Made the login and Register flow of the website using PHP and sql database. Also helped the team in designing the pages.</p>
     </div>
     <div class="column2">
-    <img src="japmeet.jpeg" class="japmeet">
-      <p >Hi, I am Japmeet Singh.I love developing websites and through this quiz project I got to learn a lot of things starting from SQL databases to frontend designing.</p>
+    <img src="meghana.jpeg" class="meghana">
+      <p >Hi, I am Meghana.I love developing Machine Learning models and but after this quiz project I got to learn a lot about Web Dev and I am loving this tech stack.</p>
       <h1 class="subheading">Contribution:</h1>
-      <p>Made the login and Register flow of the website using PHP and sql database. Also helped the team in designing the pages.</p>
+      <p>Made the Quiz part of the website using Javascript. Also helped the team in designing the pages.</p>
         
     </div>
     <div class="column3">
-    <img src="japmeet.jpeg" class="japmeet">
-      <p >Hi, I am Japmeet Singh.I love developing websites and through this quiz project I got to learn a lot of things starting from SQL databases to frontend designing.</p>
+    <img src="nitin.jpeg" class="nitin">
+      <p >Hi, I am Nitin Saini.I love Competetive coding and through this project I got to explore the Web Dev field. Feel proud and Motivated to explore further.</p>
       <h1 class="subheading">Contribution:</h1>
-      <p>Made the login and Register flow of the website using PHP and sql database. Also helped the team in designing the pages.</p>
+      <p>Made the About_Us page of the website using HTML and CSS.Also helped the team in designing the pages.</p>
         
     </div>
     </div>
